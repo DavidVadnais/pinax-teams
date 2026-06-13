@@ -39,7 +39,7 @@ dependencies = [
 [project.optional-dependencies]
 tests = [
     "django-test-plus>=1.0.22",
-    "pinax-templates>=3.0.0",
+    "pinax-templates>=3.0.1",
 ]
 
 [project.urls]
