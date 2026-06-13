@@ -1,5 +1,8 @@
-import pkg_resources
+from importlib.metadata import PackageNotFoundError, version
 
-__version__ = pkg_resources.get_distribution("pinax-teams").version
+try:
+    __version__ = version("pinax-teams")
+except PackageNotFoundError:
+    __version__ = "unknown"
 
 default_app_config = "pinax.teams.apps.AppConfig"
